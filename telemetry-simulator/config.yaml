@@ -1,0 +1,29 @@
+# Telemetry Simulator Config
+simulator:
+  update_interval: 1.0  # seconds
+  drones: 8
+  base_lat: -2.5
+  base_lng: 140.5
+  max_speed: 30  # km/h
+  max_altitude: 250  # meters
+
+missions:
+  - BORDER_PATROL
+  - FOREST_PATROL
+  - COASTAL_PATROL
+  - SEARCH_RESCUE
+  - SURVEILLANCE
+  - RECON
+  - ESCORT
+  - INTERDICTION
+
+statuses:
+  - ACTIVE
+  - WARNING
+  - CRITICAL
+  - IDLE
+  - RETURNING
+
+websocket:
+  host: "localhost"
+  port: 8765

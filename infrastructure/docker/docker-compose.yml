@@ -1,0 +1,28 @@
+services:
+
+  postgres:
+    image: postgis/postgis:15-3.4
+    container_name: aegis-postgis
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: aegis_db
+    ports:
+      - "5456:5432"
+
+  backend:
+    image: node:22
+    working_dir: /app
+    volumes:
+      - ../../backend:/app
+    command: node src/server.js
+    ports:
+      - "5000:5000"
+
+  ai-engine:
+    image: python:3.12
+    working_dir: /app
+    volumes:
+      - ../../ai-engine:/app
+    command: python -m uvicorn api.app:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"

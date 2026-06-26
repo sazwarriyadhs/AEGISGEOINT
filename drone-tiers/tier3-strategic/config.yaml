@@ -1,0 +1,30 @@
+# D:\AegisGeoInt\drone-tiers\tier3-strategic\config.yaml
+---
+tier: 3
+name: "Strategic Long-Endurance"
+type: "Hybrid VTOL"
+count: 1
+
+specifications:
+  endurance_hours: 12.0
+  operation_radius_km: 500
+  cruise_speed_kmh: 140
+  ceiling_m: 6500
+  payload_weight_kg: 30
+
+power:
+  type: "hybrid"
+  fuel_capacity_l: 50
+  battery_capacity_wh: 5000
+
+communication:
+  satcom: true
+  starlink: true
+  anti_jamming_gnss: true
+  redundant_nav: true
+
+mission_types:
+  - cross_district_patrol
+  - maritime_surveillance
+  - bvlos_operation
+  - border_monitoring

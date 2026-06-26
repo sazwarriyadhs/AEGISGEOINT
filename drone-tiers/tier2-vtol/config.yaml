@@ -1,0 +1,40 @@
+# D:\AegisGeoInt\drone-tiers\tier2-vtol\config.yaml
+---
+tier: 2
+name: "Operational ISR VTOL"
+type: "VTOL Fixed Wing"
+count: 2
+
+specifications:
+  endurance_hours: 6.0
+  operation_radius_km: 200
+  cruise_speed_kmh: 110
+  ceiling_m: 6000
+  payload_weight_kg: 8
+  wind_resistance_ms: 19.0
+
+payload:
+  eo_ir_gimbal: true
+  thermal: "640x512"
+  optical_zoom: 30
+  ai_payload: true
+  rtk_gps: true
+  lidar: false
+  multispectral: false
+
+communication:
+  data_link_range_km: 100
+  satcom: true
+  starlink: false
+
+launch_recovery:
+  vertical_takeoff: true
+  vertical_landing: true
+
+mission_types:
+  - border_patrol
+  - forest_patrol
+  - logistics_monitoring
+  - search_rescue
+  - area_surveillance
+  - maritime_surveillance

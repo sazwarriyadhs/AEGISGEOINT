@@ -1,0 +1,32 @@
+# D:\AegisGeoInt\drone-tiers\tier1-tactical\config.yaml
+---
+tier: 1
+name: "Tactical Recon Drone"
+type: "Multirotor"
+count: 4
+
+specifications:
+  endurance_minutes: 50
+  operation_radius_km: 15
+  max_altitude_m: 500
+  wind_resistance_ms: 14.0
+  ip_rating: "IP55"
+  
+payload:
+  - EO Camera
+  - Thermal Camera
+  - Laser Range Finder
+  
+battery:
+  capacity_wh: 300
+  hot_swap: true
+  
+deployment:
+  portable_backpack: true
+  launch_time_seconds: 120
+
+mission_types:
+  - perimeter_patrol
+  - object_identification
+  - close_range_recon
+  - team_support

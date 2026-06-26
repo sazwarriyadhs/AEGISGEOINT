@@ -1,0 +1,14 @@
+  # ============================================
+  # TELEMETRY SIMULATOR (Added)
+  # ============================================
+  telemetry:
+    build:
+      context: ./telemetry-simulator
+      dockerfile: Dockerfile
+    container_name: aegis-telemetry-papua
+    ports:
+      - "8765:8765"
+    networks:
+      - aegis-network
+    restart: unless-stopped
+    command: python simulator.py

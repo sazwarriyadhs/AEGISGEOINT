@@ -1,0 +1,47 @@
+# D:\AegisGeoInt\papua-operations\papua-config.yaml
+---
+region: "Papua, Indonesia"
+
+terrain:
+  - mountain
+  - forest
+  - coastal
+  - swamp
+
+weather:
+  - high_rainfall
+  - fast_changing
+  - low_visibility
+  - high_humidity
+
+challenges:
+  - no_runway
+  - limited_infrastructure
+  - limited_connectivity
+  - vast_area
+  - high_altitude
+
+deployment_packages:
+  tactical_package:
+    - "4 Tactical Recon Drone"
+    - "1 Mobile Command Vehicle"
+    - "1 Portable Ground Station"
+  
+  operational_package:
+    - "2 VTOL ISR Drone"
+    - "4 Tactical Drone"
+    - "AI Command Center"
+    - "Edge AI Server"
+  
+  strategic_package:
+    - "2 Long Endurance VTOL"
+    - "6 Tactical Drone"
+    - "Satellite Connectivity"
+    - "Multi-domain C5ISR Dashboard"
+    - "Regional Operations Center"
+
+communication:
+  primary: "RF Data Link 900MHz"
+  secondary: "LTE/5G"
+  tertiary: "SATCOM / Starlink"
+  mesh: true

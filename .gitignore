@@ -1,0 +1,48 @@
+# Large files - SKIP SEMUA YANG BESAR!
+database/spatial/
+*.gpkg
+*.shp
+*.tif
+*.geojson
+
+# Models
+*.pkl
+*.h5
+*.pt
+*.pth
+*.onnx
+*.safetensors
+models/
+
+# Images
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.avi
+*.mov
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+logs/
+*.log
+*.tmp
+
+# Uploads
+uploads/
+temp/
+
+# Build
+dist/
+build/
+*.war
+
+# Environment
+.env
+.env.*
